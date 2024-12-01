@@ -4,7 +4,7 @@ import numpy as np
 from collections import defaultdict
 
 def run(file):
-    file_content = pd.read_csv(file, delimiter='   ', names =['list1','list2'], engine='python')
+    file_content = pd.read_csv(file, delimiter=r"\s+", names =['list1','list2'])
     # print(file_content.head(1))
     
     # Question 1
